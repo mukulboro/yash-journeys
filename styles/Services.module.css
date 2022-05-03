@@ -1,0 +1,93 @@
+.mainSection{
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--background-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.services{
+    transition: 1s;
+    background-color: var(--main-color) ;
+    height: 60%;
+    width: 80%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.serviceSection{
+    transition: 1s;
+    background-color: var(--main-color);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.serviceTitle{
+    transition: 1s;
+    padding: 0 2%;
+    font-family: 'Oswald';
+    text-align: left;
+    width: 100%;
+    color: white;
+    font-size: 2.5rem;
+}
+
+.serviceNumber{
+    transition: 1s;
+    font-family: 'Oswald';
+    padding: 0 2%;
+    text-align: left;
+    width: 100%;
+    font-weight: 400;
+    color: var(--accent-yellow);
+}
+
+.serviceDescription{
+    padding: 0 2%;
+    font-family: 'Roboto';
+    color: white;
+}
+
+.serviceSection:hover{
+    background-color: var(--accent-yellow);
+}
+
+.serviceSection:hover .serviceNumber{
+    transition: 1s;
+    color: white;
+}
+
+.serviceSection:hover .serviceTitle{
+    transition: 1s;
+    color: var(--background-color);
+}
+
+@media only screen and (max-width: 850px) {
+    .mainSection{
+        height: fit-content;
+        padding: auto 2%;
+    }
+
+    .services{
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+
+    .serviceTitle{
+        width: 100%;
+        text-align: center;
+    }
+
+    .serviceDescription{
+        text-align: center;
+        margin-bottom: 10px;
+    }
+}
