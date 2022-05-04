@@ -11,3 +11,20 @@
 .mainBody img{
     height: 10rem;
 }
+
+.upArrow{
+    transition: 1s;
+    cursor: pointer;
+    color: var(--main-color);
+    font-family: 'Oswald', sans-serif;
+    text-shadow: 0px 0px 5px var(--accent-yellow);
+    font-weight: 900;
+    font-size: 3rem;
+    text-decoration: none;
+}
+
+.upArrow:hover{
+    transition: 1s;
+    color: var(--accent-yellow);
+    text-shadow: 0px 0px 5px var(--main-color);
+}

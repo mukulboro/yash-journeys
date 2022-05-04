@@ -13,6 +13,7 @@ export default function Home() {
       Yash Journeys
     </title>
   </Head>
+  <a id="top" ></a>
 
   <Header/>
 
