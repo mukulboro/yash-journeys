@@ -39,6 +39,7 @@ body{
   font-weight: 200;
   text-align: center;
   width: 90%;
+  overflow-y: hidden;
 }
 
 .actionButton{
@@ -66,7 +67,7 @@ body{
 
 .actionButtonAlt{
   transition: 1s;
-  background-color: var(--main-color);
+  background-color: var(--accent-yellow);
   font-size: 1.3rem;
   font-weight: 400;
   outline: none;
@@ -77,6 +78,13 @@ body{
   color: white;
   font-family: 'Roboto', sans-serif;
   cursor: pointer;
+}
+
+.actionButtonAlt:hover{
+  transition: 1s;
+  background-color: var(--dark-yellow);
+  border-radius: 0 20px 0 20px;
+  letter-spacing: 3px;
 }
 
 ::-webkit-scrollbar {
