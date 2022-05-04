@@ -33,10 +33,11 @@
     font-family: 'Roboto', sans-serif;
     text-decoration: none;
     font-size: 1.8em;
-    font-weight: 500;
+    font-weight: 300;
     padding: 0 4%;
     background-color: var(--main-color-transparent);
     border-radius: 0 20px 0 20px;
+    cursor: pointer;
 }
 
 .menuItem:hover{
@@ -84,6 +85,8 @@
     font-weight: 900;
     font-size: 3rem;
     text-decoration: none;
+    position: absolute;
+    top: 85vh;
 }
 
 .content a:hover{
@@ -96,11 +99,12 @@
     transition: 1s;
     background-color: var(--main-color);
     font-size: 1.3rem;
-    font-weight: 800;
+    font-weight: 400;
     outline: none;
     padding: 2%;
     border: none;
     border-radius: 20px 0 20px 0;
+    text-transform: uppercase;
     color: white;
     font-family: 'Roboto', sans-serif;
     cursor: pointer;
@@ -116,6 +120,7 @@
 
 .navLogo{
     height: 4rem;
+    cursor: pointer;
 }
 
 @media only screen and (max-width: 820px) {
@@ -136,7 +141,7 @@
             border-radius: 30px;
             border-color: var(--accent-yellow);
             border-style: solid;
-            border-width: 3px;
+            border-width: 1px;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -165,7 +170,7 @@
         }
 
         .content h1{
-            font-size: 4rem;
+            font-size: 3rem;
         }
 
         .content a{

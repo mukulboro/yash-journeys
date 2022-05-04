@@ -8,8 +8,10 @@
   --main-color: #0FACAE;
   --main-color-transparent: #0FACAE88;
   --accent-yellow: #F9A833;
+  --dark-yellow: #cd7904;
   --background-color: #025155;
   overflow-x: hidden;
+  cursor: default;
 }
 
 html{
@@ -23,7 +25,11 @@ body{
 .title{
   color: white;
   font-family: 'Oswald';
+  text-align: center;
   font-size: 4rem;
+  width: 100%;
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.658);
+
 }
 
 .subtitle{
@@ -33,4 +39,78 @@ body{
   font-weight: 200;
   text-align: center;
   width: 90%;
+}
+
+.actionButton{
+  transition: 1s;
+  background-color: var(--main-color);
+  font-size: 1.3rem;
+  font-weight: 400;
+  outline: none;
+  padding: 2%;
+  border: none;
+  border-radius: 20px 0 20px 0;
+  text-transform: uppercase;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  cursor: pointer;
+}
+
+.actionButton:hover{
+  transition: 1s;
+  background-color: var(--main-color-transparent);
+  border-radius: 0 20px 0 20px;
+  letter-spacing: 3px;
+}
+
+
+.actionButtonAlt{
+  transition: 1s;
+  background-color: var(--main-color);
+  font-size: 1.3rem;
+  font-weight: 400;
+  outline: none;
+  padding: 2%;
+  border: none;
+  border-radius: 20px 0 20px 0;
+  text-transform: uppercase;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  cursor: pointer;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--main-color-transparent);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--accent-yellow);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--dark-yellow);
+}
+
+::-moz-selection { /* Code for Firefox */
+  background: transparent;
+}
+
+::selection {
+  background: transparent;
+}
+
+@media only screen and (max-width: 820px) {
+  .title{
+    font-size: 3rem;
+  }
+  .subtitle{
+    font-size: 1rem;
+  }
 }

@@ -17,6 +17,7 @@ const Services = () => {
                     number="02" 
                     title="Everything is Included" 
                     body="Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit animi corporis repudiandae aliquam provident voluptatum consectetur labore vitae odio est?" 
+                    alt = {true}
                 />
                 <ServiceSection 
                     number="03" 
@@ -29,10 +30,10 @@ const Services = () => {
 }
 
 
-const ServiceSection = ({ number, title, body }) => {
-    return <section className={styles.serviceSection}>
-        <h2 className={styles.serviceNumber}>{number}</h2>
-        <h1 className={styles.serviceTitle}>{title}</h1>
+const ServiceSection = ({ number, title, body, alt }) => {
+    return <section className={ !alt ? styles.serviceSection : styles.serviceSectionAlt}>
+        <h2 className={ !alt ? styles.serviceNumber : styles.serviceNumberAlt}>{number}</h2>
+        <h1 className={ !alt ? styles.serviceTitle : styles.serviceTitleAlt}>{title}</h1>
         <p className={styles.serviceDescription}>{body}</p>
     </section>
 }
