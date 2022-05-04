@@ -7,3 +7,7 @@
     align-items: center;
     background-color: var(--dark-yellow);
 }
+
+.mainBody img{
+    height: 10rem;
+}

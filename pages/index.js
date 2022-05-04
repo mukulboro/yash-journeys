@@ -25,6 +25,5 @@ export default function Home() {
   <a id="team" ></a>
   <About/>
 
-
   </>
 }
