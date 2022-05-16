@@ -37,7 +37,7 @@ const Reviews = () => {
 const ReviewDetails = ({ data })=>{
   
   return data.map((review)=>{
-    return <section className={styles.reviewDetail}>
+    return <section key={review.title} className={styles.reviewDetail}>
       <h1>{review.title}</h1>
       <section>
       <ReviewStars number={review.stars}/>

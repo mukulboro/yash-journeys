@@ -34,7 +34,7 @@ const Tours = () => {
 const TourDetails = ({ data })=>{
   
   return data.map((tour)=>{
-    return <section className={styles.tourDetail}>
+    return <section key={tour.title} className={styles.tourDetail}>
       <h1>{tour.title}</h1>
       <img src={tour.image} alt={tour.title} />
       <h2>{tour.body.slice(0, 200)}.....</h2>

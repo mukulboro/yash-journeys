@@ -2,6 +2,7 @@ import React from 'react'
 import styles from "../styles/Header.module.css"
 import MenuIcon from '@mui/icons-material/Menu';
 import OpenMenu from '@mui/icons-material/Close';
+import Link from 'next/link';
 import { useState } from 'react';
 
 const Header = () => {
@@ -10,9 +11,9 @@ const Header = () => {
         <section className={styles.mainHeader}>
             {/* ----------NAVBAR------------------- */}
             <nav className={styles.navBar}>
-                <a href="/">
+                <Link href="/">
                     <img src="logo.png" alt="yash-journeys-logo" className={styles.navLogo} />
-                </a>
+                </Link>
 
                 <ul className={styles.navBarLinks}>
                     <li><a href='#services' className={styles.menuItem} >Services</a></li>
@@ -24,9 +25,9 @@ const Header = () => {
 
             <nav className={styles.mobileNavBar}>
 
-            <a href="/">
+            <Link href="/">
                     <img src="logo.png" alt="yash-journeys-logo" className={styles.navLogo} />
-                </a>
+                </Link>
 
                 {!isMobileNav ? <MenuIcon htmlColor='#F9A833'
                     fontSize='large'
