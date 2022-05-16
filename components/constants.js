@@ -1,3 +1,3 @@
 export const constants = {
-    apiURL: "http://localhost:3000/api"
+    apiURL: "https://nhsa7yjmiy9.vercel.app/api"
 }
